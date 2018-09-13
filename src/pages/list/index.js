@@ -5,4 +5,7 @@ import './index.styl';
 export default class List extends Intact {
 	@Intact.template()
 	static template = template;
+	_init() {
+		console.log(1);
+	}
 }
