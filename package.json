@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --hot --inline --config config/webpack.dev.config.js",
+    "build": "webpack --config config/webpack.prod.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,21 +19,26 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
+    "kpc": "^0.8.9",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^2.1.6",
     "style-loader": "^0.21.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "url-loader": "^1.1.2",
     "vdt": "^1.2.6",
     "vdt-loader": "^1.4.4",
     "webpack": "^4.16.3",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "director": "^1.2.8",
-    "intact": "^2.2.5",
-    "kpc": "^0.4.3"
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "intact": "^2.2.5"
   }
 }

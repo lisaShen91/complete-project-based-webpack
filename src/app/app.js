@@ -3,7 +3,7 @@ import {App} from 'kpc/components/app';
 import {Router} from 'director/build/director';
 
 window.app = new App({
-	container: document.querySelector('.ctrl-main-container')
+	container: document.querySelector('#app')
 });
 
 let router = new Router(routes);

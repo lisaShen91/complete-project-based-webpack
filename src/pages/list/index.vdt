@@ -1,1 +1,9 @@
-<div>test1</div>
+<div>
+    <div class="logo">{{ self.get('message') }}</div>
+    <ul>
+        <li>
+            this is li
+            <a href=""> iam link </a>
+        </li>
+    </ul>
+</div>

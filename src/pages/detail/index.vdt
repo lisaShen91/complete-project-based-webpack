@@ -1,6 +1,0 @@
-import Button from 'kpc/components/button';
-
-<div>
-    <Button type="primary">hello world</Button>
-    <Button type="primary">hello world</Button>
-</div>

@@ -1,0 +1,47 @@
+
+.logo
+	position absolute
+	top 50%
+	left 50%
+	width w = 150px
+	height h = 150px
+	margin-top -(h / 2)
+	margin-left -(w / 2)
+
+.logo
+	position absolute
+	top 50%
+	left 50%
+	width 150px
+	height 150px
+	margin-top -(@height / 2)
+	margin-left -(@width / 2)
+
+body
+	color: red
+	ul
+		li
+			color: pink
+			a
+				background-color: @color
+
+fontSize = 30px
+
+.logo
+	font-size fontSize
+
+vendor(prop, args)
+	-webkit-{prop} args
+	-moz-{prop} args
+
+border-radius()
+	vendor('border-radius', arguments)
+
+box-shadow()
+	vendor('box-shadow', arguments)
+
+.logo
+	border-radius 10px
+	border 1px solid black
+				
+				
